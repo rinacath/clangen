@@ -189,7 +189,7 @@ class Screens():
                                   target: callable,
                                   thread_name: str = "work_thread",
                                   args: tuple = tuple()) -> PropagatingThread:
-        """Creates and starts the work_thread. 
+        """Creates and starts the work_thread.
             Returns the started thread. """
 
         work_thread = PropagatingThread(target=self._work_target, args=(target, args),
@@ -217,14 +217,14 @@ class Screens():
                               final_actions: callable,
                               loading_screen_pos: tuple = None,
                               delay: float = 0.7) -> None:
-        """Handles all actions that must be run every frame for the loading window to work. 
-        Also handles creating and killing the loading window. 
+        """Handles all actions that must be run every frame for the loading window to work.
+        Also handles creating and killing the loading window.
          """
 
         if not isinstance(work_thread, PropagatingThread):
             return
 
-        # Handled the loading animation, both creating and killing it. 
+        # Handled the loading animation, both creating and killing it.
         if not self.loading_window.get(work_thread.name) and work_thread.is_alive() \
                 and work_thread.get_time_from_start() > delay:
             self.loading_window[work_thread.name] = EventLoading(loading_screen_pos)
@@ -232,12 +232,12 @@ class Screens():
             self.loading_window[work_thread.name].kill()
             self.loading_window.pop(work_thread.name)
 
-        # Handles displaying the events once timeskip is done. 
+        # Handles displaying the events once timeskip is done.
         if self.work_done.get(work_thread.name, False):
             # By this time, the thread should have already finished.
-            # This line allows exceptions in the work thread to be 
+            # This line allows exceptions in the work thread to be
             # passed to the main thread, so issues in the work thread are not
-            # silent failures. 
+            # silent failures.
             work_thread.join()
 
             self.work_done.pop(work_thread.name)
@@ -269,8 +269,8 @@ class Screens():
 
     # Functions to deal with the menu.
     #   The menu is used very often, so I don't want to keep
-    #   recreating and killing it. Lots of changes for bugs there. 
-    #   
+    #   recreating and killing it. Lots of changes for bugs there.
+    #
 
     def hide_menu_buttons(self):
         """This hides the menu buttons, so they are no longer visible
@@ -389,7 +389,7 @@ class Screens():
             self.menu_buttons['moons_n_seasons'].hide()
             self.menu_buttons['moons_n_seasons_arrow'].hide()
 
-    # open moons and seasons UI (AKA wide version)    
+    # open moons and seasons UI (AKA wide version)
     def mns_open(self):
         self.menu_buttons['moons_n_seasons_arrow'] = UIImageButton(
             scale(pygame.Rect((349, 161), (44, 68))),

@@ -1,0 +1,52 @@
+{
+    "names": {
+        "elder_leaves": "elder leaves",
+        "cobwebs": "cobwebs",
+        "daisy": "daisy",
+        "horsetail": "horsetail",
+        "juniper": "juniper",
+        "lungwort": "lungwort",
+        "mallow": "mallow",
+        "marigold": "marigold",
+        "moss": "moss",
+        "oak_leaves": "oak leaves",
+        "ragwort": "ragwort",
+        "raspberry": "raspberry",
+        "tansy": "tansy",
+        "thyme": "thyme",
+        "wild_garlic": "wild garlic",
+        "dandelion": "dandelion",
+        "mullein": "mullein",
+        "rosemary": "rosemary",
+        "burdock": "burdock",
+        "blackberry": "blackberry",
+        "betony": "betony",
+        "goldenrod": "goldenrod",
+        "poppy": "poppy",
+        "plantain": "plantain",
+        "catmint": "catmint"
+    },
+    "descriptions": {
+        "elder_leaves": {
+            "biomes": ["Forest", "Mountainous"]
+        },
+        "cobwebs": {
+            "biomes": ["Beach", "Desert", "Forest", "Mountainous"]
+        },
+        "daisy": {
+            "biomes": ["Forest", "Mountainous", "Desert"]
+        },
+        "horsetail": {
+            "biomes": ["Forest", "Desert"]
+        },
+        "juniper": {
+            "biomes": ["Forest", "Desert", "Mountainous", "Beach"]
+        },
+        "lungwort": {
+            "biomes": ["Desert"]
+        },
+        "mallow": {
+            "biomes": ["Forest", "Desert"]
+        }
+    }
+}

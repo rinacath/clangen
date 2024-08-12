@@ -1,4 +1,4 @@
-from typing import Union, Tuple
+from typing import Union, Tuple, List
 import html
 
 import pygame
@@ -12,9 +12,70 @@ from pygame_gui.core.utility import translate
 from pygame_gui.elements import UIAutoResizingContainer
 
 from scripts.game_structure import image_cache
-from scripts.game_structure.game_essentials import game
+from scripts.game_structure.game_essentials import game, MANAGER
 
 from scripts.utility import scale, shorten_text_to_fit
+
+
+class ButtonList:
+    """
+        A list of UIButton objects.
+    """
+
+    def __init__(self, buttons:List, button_sizes:Tuple, position:RectLike, spacing:int = 10) -> None:
+        """
+            `buttons` should be an ordered list of properties in the form:
+            {
+                text: Text to show on button
+                object_id: object id
+                key: key to be returned for event
+                tool_tip_text: tool tip text (optional)
+            }
+        """
+
+        self.buttons = []
+        """An ordered list of UIButton objects"""
+        self.keys = []
+        # self.style = style
+        self.button_sizes:Tuple = button_sizes
+        """Size of button objects as (width, height)"""
+
+        self.container =  pygame_gui.elements.UIScrollingContainer(
+            scale(position),
+            allow_scroll_x=False,
+            manager=MANAGER
+        )
+
+        self.spacing = spacing
+
+        n = 0
+        for button in buttons:
+            y_pos = n * self.button_sizes[1] # + (spacing if n > 0 else 0)
+            print(y_pos)
+            rect = pygame.Rect((0, y_pos), self.button_sizes)
+            self.buttons.append(UIImageButton(
+                relative_rect=scale(rect),
+                text=button["text"],
+                manager=MANAGER,
+                container=self.container,
+                tool_tip_text=button["tool_tip_text"] if "tool_tip_text" in button else None,
+                object_id=button["object_id"] if "object_id" in button else None
+            ))
+            self.keys.append(button["key"])
+            n += 1
+
+    def kill(self):
+        for button in self.buttons:
+            button.kill()
+
+
+    def get_button_key(self, button):
+        for i in range(0, len(self.buttons)):
+            b = self.buttons[i]
+            if b == button:
+                return self.keys[i]
+
+        return None
 
 
 class UIImageButton(pygame_gui.elements.UIButton):
@@ -290,7 +351,7 @@ class UISpriteButton:
     def set_image(self, new_image):
         self.image.set_image(new_image)
 
-    """This is to simplify event handling. Rather that writing 
+    """This is to simplify event handling. Rather that writing
             'if event.ui_element = cat_sprite_object.button'
             you can treat is as any other single pygame UI element and write:
             'if event.ui_element = cat_sprite_object. """

@@ -2648,3 +2648,11 @@ with open(f"resources/dicts/prey_text_replacements.json", "r") as read_file:
 
 with open(f"resources/dicts/backstories.json", "r") as read_file:
     BACKSTORIES = ujson.loads(read_file.read())
+
+TERRITORIES = None
+with open(f"resources/dicts/territories.json", "r") as read_file:
+    TERRITORIES = ujson.loads(read_file.read())
+
+HERB_DICT = None
+with open("resources/dicts/herb_dict.json", "r") as read_file:
+    HERB_DICT = ujson.loads(read_file.read())

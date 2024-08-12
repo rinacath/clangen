@@ -29,8 +29,9 @@ from scripts.utility import (
     get_current_season,
     quit,
     clan_symbol_sprite,
+    TERRITORIES
 )  # pylint: disable=redefined-builtin
-
+from scripts.clan_resources.territory import Territory
 
 class Clan:
     """
@@ -177,6 +178,13 @@ class Clan:
         self.faded_ids = (
             []
         )  # Stores ID's of faded cats, to ensure these IDs aren't reused.
+
+
+        # Load in territories
+        self.territories = TERRITORIES["Forest"]["locations"]
+        self.contested_territory = {}
+
+
         if self_run_init_functions:
             self.post_initialization_functions()
 
@@ -529,6 +537,10 @@ class Clan:
             [str(i.chosen_symbol) for i in self.all_clans]
         )
         clan_data["war"] = self.war
+
+        clan_data["territories"] = ",".join(
+            [str(i) for i in self.territories]
+        )
 
         self.save_herbs(game.clan)
         self.save_disaster(game.clan)
@@ -904,6 +916,31 @@ class Clan:
         if game.clan.game_mode != "classic":
             self.load_freshkill_pile(game.clan)
         game.switches["error_message"] = ""
+
+
+        contested_territory = clan_data["contested_territory"].split(",") if "contested_territory" in clan_data else []
+        if game.clan.biome in TERRITORIES:
+            locations = TERRITORIES[game.clan.biome]["locations"]
+            if "territories" in clan_data:
+                game.clan.territories = {}
+                for key in clan_data["territories"].split(","):
+                    if key in locations:
+                        territory_data = locations[key]
+                        game.clan.territories[key] = Territory(
+                            key=key,
+                            name=territory_data["name"],
+                            description=territory_data["description"],
+                            tags=territory_data["tags"],
+                            herbs=territory_data["herbs"] if "herbs" in territory_data else None,
+                            prey_quality=territory_data["prey_quality"],
+                            is_contested=(key in contested_territory),
+                            camp_type=territory_data["camp_type"] if "camp_type" in territory_data else None
+                        )
+                    else:
+                        print(f"No territory {key} in biome {game.clan.biome} in territories.json")
+        else:
+            print(f"No biome {game.clan.biome} in territories.json")
+
 
         # Return Version Info.
         return {

@@ -1,0 +1,143 @@
+{
+    "comments": [
+        "On clan creation, an assortment of these will be assigned to each clan.",
+
+
+        "prey_quality - a number from 0 to 5 that describes how plentiful prey is here, where 5 is ",
+        "               very plentiful, and 0 means no prey can be found.",
+        "tags:",
+        "   -      `camp` - a location for a camp. Each territory only has one.",
+        "   -   `hunting` - enables this location for hunting patrols.",
+        "   -  `relaxing` - being here reduces a cats stress",
+        "   - `stressful` - being here increases a cats stress",
+        "   -  `training` - a location where cats can learn and teach. If a clan doesn't have access",
+        "                  to at least one of these, the 'training' patrol will be disabled.",
+        "   -   `unowned` - a location that isn't part of owned clan territory (eg: Fourtrees, a ",
+        "                   twolegplace, etc.",
+        "      - `border` - TODO? enables this location for border patrols",
+
+
+        "Each clan will be given a "
+    ],
+    "general": {
+        "locations": {
+            "gen_camp": {
+                "name": "Camp",
+                "description": "c_n's camp.",
+                "tags": ["camp"],
+                "herbs": [],
+                "prey_quality": 0
+            }
+        }
+    },
+    "Beach": {
+        "locations": {}
+    },
+    "Desert": {
+        "locations": {}
+    },
+    "Forest": {
+        "locations": {
+            "classic_camp": {
+                "name": "Camp",
+                "description": "A clearing in the trees where c_n's camp is located.",
+                "tags": ["camp"],
+                "camp_type": ["classic_camp"],
+                "prey_quality": 0,
+                "herbs": [
+                    "cobwebs"
+                ]
+            },
+            "great_oak": {
+                "name": "The Great Oak",
+                "description": "A huge, ancient oak tree.",
+                "tags": ["hunting"],
+                "prey_quality": 5,
+                "herbs": [
+                    "elder_leaves",
+                    "cobwebs",
+                    "daisy",
+                    "horsetail",
+                    "juniper",
+                    "lungwort",
+                    "mallow",
+                    "marigold",
+                    "moss",
+                    "oak_leaves",
+                    "ragwort",
+                    "raspberry",
+                    "tansy",
+                    "thyme",
+                    "wild_garlic",
+                    "dandelion",
+                    "mullein",
+                    "rosemary",
+                    "burdock",
+                    "blackberry",
+                    "betony",
+                    "goldenrod",
+                    "poppy",
+                    "plantain"
+                ]
+            },
+            "treecut": {
+                "name": "Treecut Place",
+                "description": "A strange patch of evenly-spaced trees. Being here makes cats uneasy, but prey can be found amongst the trees.",
+                "tags": ["hunting", "stressful"],
+                "prey_quality": 3,
+                "herbs": [
+                    "cobwebs",
+                    "moss",
+                    "catmint"
+                ]
+            },
+            "snakerocks": {
+                "name": "Snakerocks",
+                "description": "A small mound of boulders. Venomous adders live within the cracks between the rocks.",
+                "tags": ["hunting", "stressful"],
+                "prey_quality": 2
+            },
+            "sandy_hollow": {
+                "name": "Sandy Hollow",
+                "description": "A hollow with soft, sandy ground, where apprentices can learn fighting moves without getting hurt.",
+                "tags": ["training", "relaxing"],
+                "prey_quality": 2,
+                "herbs": [
+                    "cobwebs",
+                    "oak_leaves",
+                    "moss"
+                ]
+            },
+            "twolegplace": {
+                "name": "Twolegplace",
+                "description": "Where twolegs have built their dens. Some sparse resources can be found here.",
+                "tags": ["unowned", "stressful", "hunting"],
+                "prey_quality": 1,
+                "herbs": [
+                    "daisy",
+                    "marigold",
+                    "thyme",
+                    "catmint",
+                    "poppy"
+                ]
+            },
+            "greenleaf_twolegplace": {
+                "name": "Greenleaf Twolegplace",
+                "description": "In greenleaf, twolegs live here in strange pelt-dens.",
+                "tags": ["stressful", "hunting"],
+                "prey_quality": 2,
+                "herbs": []
+            }
+        }
+    },
+    "Mountainous": {
+        "locations": {
+            "cave_camp": {
+                "name": "The Cave",
+                "description": "A safe, protected cave set into the mountain face, where c_n makes their camp.",
+                "tags": ["camp"],
+                "herbs": []
+            }
+        }
+    }
+}
