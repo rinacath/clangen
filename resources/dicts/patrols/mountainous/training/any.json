@@ -1450,7 +1450,7 @@
             {
                 "text": "Scoffing, app1 steps straight into the circle of mushroom - these aren't even poisonous, app1 doesn't know what p_l is on about. But something about this place makes {PRONOUN/app1/poss} pelt prickle and stand on end, for all {PRONOUN/app1/poss} bravado.",
                 "exp": 0,
-                "weight": 20,              
+                "weight": 20,
                 "relationships": [
                     {
                         "cats_to": ["app1"],
@@ -1479,7 +1479,7 @@
                                 "scars": [],
                                 "no_results": false
                     }
-                ],                    
+                ],
                 "relationships": [
                     {
                         "cats_to": ["app1"],

@@ -310,7 +310,7 @@ class Condition_Events:
 
     @staticmethod
     def handle_injuries(cat, random_cat=None):
-        """ 
+        """
         This function handles overall the injuries in 'expanded' (or 'cruel season') game mode.
         Returns: boolean - if an event was triggered
         """

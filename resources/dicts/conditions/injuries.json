@@ -1264,7 +1264,7 @@
             "poppy"
         ]
     },
-    
+
     "poisoned": {
         "duration": 2,
         "severity": "major",
@@ -1381,7 +1381,7 @@
             "juniper"
         ]
     },
-    
+
     "pregnant": {
         "duration": 2,
         "severity": "major",

@@ -51,11 +51,11 @@
             "apprentice",
             "mediator apprentice",
             "medicine cat apprentice",
-            "warrior", 
-            "mediator", 
-            "medicine cat", 
-            "deputy", 
-            "leader", 
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "deputy",
+            "leader",
             "elder"
         ]
     },
@@ -75,11 +75,11 @@
             "apprentice",
             "mediator apprentice",
             "medicine cat apprentice",
-            "warrior", 
-            "mediator", 
-            "medicine cat", 
-            "deputy", 
-            "leader", 
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "deputy",
+            "leader",
             "elder"
         ]
     },
@@ -95,11 +95,11 @@
             "apprentice",
             "mediator apprentice",
             "medicine cat apprentice",
-            "warrior", 
-            "mediator", 
-            "medicine cat", 
-            "deputy", 
-            "leader", 
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "deputy",
+            "leader",
             "elder"
         ]
     },
@@ -112,11 +112,11 @@
             "parent/child"
         ],
         "main_status_constraint": [
-            "warrior", 
-            "mediator", 
-            "medicine cat", 
-            "deputy", 
-            "leader", 
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "deputy",
+            "leader",
             "elder"
         ]
     },
@@ -130,11 +130,11 @@
            "apprentice",
             "mediator apprentice",
             "medicine cat apprentice",
-            "warrior", 
-            "mediator", 
-            "medicine cat", 
-            "deputy", 
-            "leader", 
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "deputy",
+            "leader",
             "elder"
         ],
         "random_status_constraint": [
@@ -150,11 +150,11 @@
             "Wonders who is mentoring the c_n kits that must be apprentices by now"
         ],
         "main_status_constraint": [
-            "warrior", 
-            "mediator", 
-            "medicine cat", 
-            "deputy", 
-            "leader", 
+            "warrior",
+            "mediator",
+            "medicine cat",
+            "deputy",
+            "leader",
             "elder"
         ],
         "random_status_constraint": [

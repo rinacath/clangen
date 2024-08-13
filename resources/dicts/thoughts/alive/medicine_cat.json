@@ -156,7 +156,7 @@
         "main_trait_constraint": [
             "daring"
         ]
-    },  
+    },
     {
         "id": "faithful_medicine_cat",
         "thoughts": [
@@ -423,5 +423,5 @@
             "apprentice",
             "kitten"
         ]
-    }     
+    }
 ]

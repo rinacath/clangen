@@ -821,7 +821,7 @@
         "main_status_constraint": [
             "medicine cat",
             "medicine cat apprentice"
-        ],  
+        ],
         "random_status_constraint": [
             "kitten"
         ]

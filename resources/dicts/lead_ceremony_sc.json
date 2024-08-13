@@ -9,7 +9,7 @@
     "med_cat_virtues": ["clear sight", "devotion", "faith", "healing", "patience", "selflessness", "wisdom"],
     "prev_lead_virtues": ["endurance in the face of hardship", "knowing when to fight and when to choose peace", "leadership through the darkest times", "loyalty to {PRONOUN/m_c/poss} Clan", "the strength to overcome {PRONOUN/m_c/poss} fears", "tireless energy"]
   },
-  
+
   "intros": {
     "default": {
       "tags": [],
@@ -105,7 +105,7 @@
         }
       ]
     },
-    
+
     "child": {
       "tags": ["leader_child"],
       "lead_trait": [],
@@ -118,7 +118,7 @@
         }
       ]
     },
-    
+
     "benevolent_adult_bloodthirsty_lead": {
       "tags": [],
       "lead_trait": ["bloodthirsty"],
@@ -172,7 +172,7 @@
         }
       ]
     },
-    
+
     "adventurous_warrior": {
       "tags": [],
       "lead_trait": ["adventurous"],
@@ -210,7 +210,7 @@
         }
       ]
     },
-  
+
   	"bold_warrior": {
       "tags": [],
       "lead_trait": ["bold"],
@@ -231,7 +231,7 @@
         }
       ]
     },
-  
+
     "calm_warrior": {
       "tags": [],
       "lead_trait": ["calm"],
@@ -248,7 +248,7 @@
         }
       ]
     },
-  
+
     "careful_warrior": {
       "tags": [],
       "lead_trait": ["careful"],
@@ -265,7 +265,7 @@
         }
       ]
     },
-  
+
     "charismatic_warrior": {
       "tags": [],
       "lead_trait": ["charismatic"],
@@ -282,7 +282,7 @@
         }
       ]
     },
-  
+
     "childish_warrior": {
       "tags": [],
       "lead_trait": ["childish"],
@@ -320,7 +320,7 @@
         }
       ]
     },
-  
+
     "compassionate_warrior": {
       "tags": [],
       "lead_trait": ["compassionate"],
@@ -358,7 +358,7 @@
         }
       ]
     },
-  
+
     "daring_warrior": {
       "tags": [],
       "lead_trait": ["daring"],
@@ -375,7 +375,7 @@
         }
       ]
     },
-  
+
     "faithful_warrior": {
       "tags": [],
       "lead_trait": ["faithful"],
@@ -392,7 +392,7 @@
         }
       ]
     },
-  
+
     "fierce_warrior": {
       "tags": [],
       "lead_trait": ["fierce"],
@@ -409,7 +409,7 @@
         }
       ]
     },
-  
+
     "insecure_warrior_EXAMPLE": {
       "tags": [],
       "lead_trait": ["insecure"],
@@ -430,7 +430,7 @@
         }
       ]
     },
-  
+
     "lonesome_warrior_EXAMPLE": {
       "tags": [],
       "lead_trait": ["lonesome"],
@@ -451,7 +451,7 @@
         }
       ]
     },
-  
+
     "loving_warrior_EXAMPLE": {
       "tags": [],
       "lead_trait": ["loving"],
@@ -472,7 +472,7 @@
         }
       ]
     },
-  
+
   	"loyal_warrior": {
       "tags": [],
       "lead_trait": ["loyal"],
@@ -510,7 +510,7 @@
         }
       ]
     },
-  
+
     "playful_warrior": {
       "tags": [],
       "lead_trait": ["playful"],
@@ -527,7 +527,7 @@
         }
       ]
     },
-  
+
   	"responsible_warrior": {
       "tags": [],
       "lead_trait": ["responsible"],
@@ -565,7 +565,7 @@
         }
       ]
     },
-  
+
     "shameless_warrior": {
       "tags": [],
       "lead_trait": ["shameless"],
@@ -586,7 +586,7 @@
         }
       ]
     },
-  
+
     "sneaky_warrior": {
       "tags": [],
       "lead_trait": ["sneaky"],
@@ -603,7 +603,7 @@
         }
       ]
     },
-  
+
     "strange_warrior": {
       "tags": [],
       "lead_trait": ["strange"],
@@ -620,7 +620,7 @@
         }
       ]
     },
-  
+
     "strict_warrior": {
       "tags": [],
       "lead_trait": ["strict"],
@@ -633,7 +633,7 @@
         }
       ]
     },
-  
+
     "thoughtful_warrior": {
       "tags": [],
       "lead_trait": ["thoughtful"],
@@ -667,7 +667,7 @@
         }
       ]
     },
-  
+
     "vengeful_warrior_EXAMPLE": {
       "tags": [],
       "lead_trait": ["vengeful"],
@@ -688,7 +688,7 @@
         }
       ]
     },
-  
+
     "wise_warrior": {
       "tags": [],
       "lead_trait": ["wise"],
@@ -742,7 +742,7 @@
         }
       ]
     },
-    
+
     "grumpy_warrior": {
       "tags": [],
       "lead_trait": ["grumpy"],
@@ -829,7 +829,7 @@
         }
       ]
     },
-    
+
     "child_kit": {
       "tags": ["leader_child"],
       "lead_trait": [],
@@ -867,7 +867,7 @@
         }
       ]
     },
-    
+
     "child_app": {
       "tags": ["leader_child"],
       "lead_trait": [],
@@ -880,7 +880,7 @@
         }
       ]
     },
-    
+
     "default_elder": {
       "tags": [],
       "lead_trait": [],
@@ -981,7 +981,7 @@
       ]
     }
   },
-  
+
   "outros": {
     "default": {
       "tags": [],

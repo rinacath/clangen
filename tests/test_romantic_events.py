@@ -9,7 +9,7 @@ class RelationshipConditions(unittest.TestCase):
         # given
         cat1 = Cat()
         cat2 = Cat()
-        
+
         condition = {
             "romantic": 0,
             "platonic": 0,
@@ -19,7 +19,7 @@ class RelationshipConditions(unittest.TestCase):
             "jealousy": -10,
             "trust": 20
         }
-        
+
         # when
         rel_fulfill = Relationship(cat1, cat2)
         rel_fulfill.romantic_love = 50

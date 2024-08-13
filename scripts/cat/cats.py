@@ -412,7 +412,7 @@ class Cat:
         :return: None
         """
         # trans cat chances
-        theythemdefault = game.settings["they them default"] 
+        theythemdefault = game.settings["they them default"]
         self.genderalign = self.gender
         trans_chance = randint(0, 50)
         nb_chance = randint(0, 75)
@@ -3695,7 +3695,7 @@ class Personality:
 # Creates a random cat
 def create_cat(status, moons=None, biome=None):
     new_cat = Cat(status=status, biome=biome)
-    
+
     if moons is not None:
         new_cat.moons = moons
     else:
@@ -3703,14 +3703,14 @@ def create_cat(status, moons=None, biome=None):
             new_cat.moons = choice(range(120, 155))
         elif new_cat.moons == 0:
             new_cat.moons = choice([1, 2, 3, 4, 5])
-    
+
     not_allowed_scars = ['NOPAW', 'NOTAIL', 'HALFTAIL', 'NOEAR', 'BOTHBLIND', 'RIGHTBLIND', 'LEFTBLIND', 'BRIGHTHEART',
                          'NOLEFTEAR', 'NORIGHTEAR', 'MANLEG']
-    
+
     for scar in new_cat.pelt.scars:
         if scar in not_allowed_scars:
             new_cat.pelt.scars.remove(scar)
-    
+
     return new_cat
 
 
@@ -3718,7 +3718,7 @@ def create_cat(status, moons=None, biome=None):
 # Twelve example cats
 def create_example_cats():
     warrior_indices = sample(range(12), 3)
-    
+
     for cat_index in range(12):
         if cat_index in warrior_indices:
             game.choose_cats[cat_index] = create_cat(status='warrior')

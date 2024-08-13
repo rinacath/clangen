@@ -20,22 +20,22 @@ def medical_cats_condition_fulfilled(all_cats,
 
     set give_clanmembers_covered to True to return the int of clanmembers that the meds can treat
     """
-    
+
     fulfilled = False
-    
+
     medical_cats = [i for i in all_cats if not i.dead and not i.outside and not
-                                            i.not_working() and i.status in 
-                                            ["medicine cat", 
+                                            i.not_working() and i.status in
+                                            ["medicine cat",
                                              "medicine cat apprentice"]]
     full_med = [i for i in medical_cats if i.status == "medicine cat"]
     apprentices = [i for i in medical_cats if i.status == "medicine cat apprentice"]
-    
+
     total_exp = 0
     for cat in medical_cats:
-        total_exp += cat.experience 
+        total_exp += cat.experience
     total_exp = total_exp * 0.003
-    
-    # Determine the total med number. Med cats with certain skill counts 
+
+    # Determine the total med number. Med cats with certain skill counts
     # as "more" of a med cat.  Only full medicine cat can have their skills have effect
     total_med_number = len(apprentices) / 2
     for cat in full_med:
@@ -47,8 +47,8 @@ def medical_cats_condition_fulfilled(all_cats,
             total_med_number += 1.5
         else:
             total_med_number += 1
-        
-    
+
+
     adjust_med_number = total_med_number + total_exp
 
     can_care_for = int(adjust_med_number * (amount_per_med + 1))

@@ -62,7 +62,7 @@
         "2_class_bigger_prey_allowed": [10,14],
         "3_class_bigger_prey_allowed": [5,9],
         "4_class_bigger_prey_allowed": [0,4]
-    },	
+    },
     "patrol_balance": {
         "comment": [
         "A season array consist of ['very_small', 'small', 'medium', 'large', 'huge']",

@@ -214,7 +214,7 @@ class GenerateEvents:
         final_events = []
         incorrect_format = []
 
-        # Chance to bypass the skill or trait requirements. 
+        # Chance to bypass the skill or trait requirements.
         trait_skill_bypass = 15
 
         # check if generated event should be a war event
@@ -749,7 +749,7 @@ class GenerateEvents:
         if trait in events:
             possible_events.extend(events[trait][body_status])
 
-        # grab family events if they're needed. Family events should not be romantic. 
+        # grab family events if they're needed. Family events should not be romantic.
         if family_relation != 'general' and rel_value != "romantic":
             events = GenerateEvents.get_death_reaction_dicts(family_relation, rel_value)
             possible_events.extend(events["general"][body_status])

@@ -247,7 +247,7 @@
         },
         "injury": [
             {
-                "cats": [ "m_c", "r_c"], 
+                "cats": [ "m_c", "r_c"],
                 "injuries": [ "shivering" ],
                 "scars": ["FROSTPAWS"]
             }
@@ -261,7 +261,7 @@
         ],
         "relationships": [
             {
-                "cats_from": [ "r_c" ], 
+                "cats_from": [ "r_c" ],
                 "cats_to": [ "m_c" ],
                 "values": [ "platonic", "comfort", "trust", "respect", "dislike" ],
                 "amount": -5
@@ -280,7 +280,7 @@
         },
         "injury": [
             {
-                "cats": [ "m_c" ], 
+                "cats": [ "m_c" ],
                 "injuries": [ "headache" ]
             }
         ]

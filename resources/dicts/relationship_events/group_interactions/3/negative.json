@@ -27,7 +27,7 @@
 				"dislike": "increase"
 			}
 		}
-	},	
+	},
 	{
 		"id": "group_3_negative_argument",
 		"cat_amount": 3,
@@ -80,7 +80,7 @@
 		"trait_constraint": {
 			"m_c": [
 				"bloodthirsty",
-				"vengeful", 
+				"vengeful",
 				"fierce"
 			]
 		},

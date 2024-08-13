@@ -8,7 +8,7 @@
             "Bats a moss-ball back to r_c when it hits {PRONOUN/m_c/object}, chuckling at the wide-eyed kit",
             "Is looking over the kits, pleased the Clan is thriving",
             "Is visiting the nursery to check on the kits, the future of the Clan"
-        ],  
+        ],
         "random_status_constraint": [
             "kitten"
         ],
@@ -302,9 +302,8 @@
             "vengeful"
         ]
     }
-   
+
 ]
 
 
 
- 

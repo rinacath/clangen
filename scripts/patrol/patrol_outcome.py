@@ -228,7 +228,7 @@ class PatrolOutcome:
                                            clan=game.clan,
                                            other_clan=patrol.other_clan)
 
-        # This order is important. 
+        # This order is important.
         results.append(self._handle_death(patrol))
         results.append(self._handle_lost(patrol))
         results.append(self._handle_condition_and_scars(patrol))

@@ -269,7 +269,7 @@
     "m_c": {
         "age": ["adolescent", "young adult", "adult", "senior adult", "senior"]
     }
-  }, 
+  },
   {
     "event_id": "gen_misc_any_misc1",
     "location": ["any"],
@@ -632,7 +632,7 @@
           "amount": -5
         }
     ]
-  }, 
+  },
   {
     "event_id": "gen_misc_any_accessory5",
     "location": ["any"],
@@ -1908,7 +1908,7 @@
       "current_rep": ["any"],
       "changed": 1
     }
-  },    
+  },
   {
     "event_id": "gen_misc_any_scandalous_other_clan4",
     "location": ["any"],
@@ -2126,7 +2126,7 @@
     "weight": 20,
     "event_text": "m_c is checking in on every cat in the camp to make sure everyone is staying healthy in the midst of war.",
     "m_c": {
-      "age":["any"],  
+      "age":["any"],
       "status": ["mediator", "mediator apprentice"],
       "trait": ["calm", "careful", "insecure", "lonesome", "loyal", "nervous", "compassionate", "faithful", "loving", "responsible", "thoughtful", "wise",  "childish", "playful"]
     },

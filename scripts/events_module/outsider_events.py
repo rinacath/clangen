@@ -42,10 +42,10 @@ class OutsiderEvents:
                 cat.die()
                 game.cur_events_list.append(
                     Single_Event(text, "birth_death", cat.ID))
-                
+
     @staticmethod
     def lost_cat_become_outsider(cat: Cat):
-        """ 
+        """
         this will be for lost cats becoming kittypets/loners/etc
         TODO: need to make a unique backstory for these cats so they still have thoughts related to their clan
         """

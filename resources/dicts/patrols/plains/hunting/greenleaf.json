@@ -2059,7 +2059,7 @@
             "warrior": [3, 6],
             "leader": [0,0],
             "all apprentices": [3, 6]
-        }, 
+        },
         "weight": 15,
         "chance_of_success": 30,
         "relationship_constraint": null,
@@ -2067,10 +2067,10 @@
         "intro_text": "The patrol hears a strange sound coming from the grass. What is that? It's like... a hiss and rustle at once?",
         "decline_text": "p_l knows <i>exactly</i> what that sound is. Get away! Now! lead_name will have to be informed of this venoumous threat on their hunting path.",
         "success_outcomes": [
-            { 
+            {
         "text": "s_c finds {PRONOUN/s_c/self} face to fang with a rattling snake. It coils and strikes fast as lightning, yet still a whisker slower than s_c. As the snake's teeth sink into empty air s_c's own fangs sink into its head. That night there's one less threat on c_n territory, and even more bellies full in camp. ",
         "exp": 25,
-        "weight": 20, 
+        "weight": 20,
         "prey": ["medium"],
         "stat_skill": ["HUNTER,2","RUNNER,2","SENSE,2","CLEVER,2"],
         "relationships": [
@@ -2083,10 +2083,10 @@
             }
             ]
         },
-        { 
+        {
         "text": "r_c finds {PRONOUN/r_c/self} face to fang with a rattling snake. {PRONOUN/r_c/subject/CAP} {VERB/r_c/flinch/flinches} away just as the snake snaps it's dripping fangs shut a single fur's length from {PRONOUN/r_c/poss} nose. r_c bolts back to the patrol. They'll need to alter their hunting path, that was too close!",
                 "exp": 5,
-                "weight": 20, 
+                "weight": 20,
                 "prey": ["very small"],
                 "relationships": [
                     {
@@ -2112,7 +2112,7 @@
                         "amount": -5
                     }
                 ],
-                "injury": 
+                "injury":
     {
                         "cats": ["r_c"],
                         "injuries": ["snake bite","poisoned"],
@@ -2123,7 +2123,7 @@
                             "lead_death": "a rattlesnake while hunting."
                         }
                     }
-                
+
             },
             {
                 "text": "r_c finds {PRONOUN/r_c/self} face to fang with a rattling snake, but {PRONOUN/r_c/subject} barely see it at all. Indescribable pain pierces {PRONOUN/r_c/poss} eye, it fills {PRONOUN/r_c/poss} head, {PRONOUN/r_c/poss} ears, {PRONOUN/r_c/poss} blood. r_c doesn't notice the rest of the patrol rush {PRONOUN/r_c/poss} into the medicine den. Not even as {PRONOUN/r_c/poss} screams echo through camp.",
@@ -2138,19 +2138,19 @@
                         "amount": -5
                     }
                 ],
-                "injury": 
+                "injury":
     {
                         "cats": ["r_c"],
                         "injuries": ["snake bite","poisoned","damaged eyes"],
                         "scars": ["RIGHTBLIND","LEFTBLIND","BOTHBLIND"],
-                        "history_text": { 
+                        "history_text": {
                         "scar": "This cat was scarred by a rattlesnake while hunting.",
                         "condition": "this cat was blinded by a rattlesnake while hunting",
                         "reg_death": "This cat was killed by a rattlesnake while hunting.",
                         "lead_death": "a rattlesnake while hunting."}
-                        
+
                     }
-    
+
             },
             {
                 "text": "r_c finds {PRONOUN/r_c/self} face to fang with a rattling snake. There is no time to react. Effortlessly, the snake's teeth find r_c's veins. For a horrific moment, every drop of blood in r_c's body burns, and then {PRONOUN/r_c/poss} Clan finds {PRONOUN/r_c/poss} cold.",

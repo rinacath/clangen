@@ -1094,15 +1094,15 @@
                 "exp": 40,
                 "weight": 20,
                 "stat_trait": [
-                    "lonesome", 
-                    "nervous", 
-                    "insecure", 
-                    "calm", 
-                    "careful", 
-                    "sneaky", 
-                    "strange", 
-                    "wise", 
-                    "cunning", 
+                    "lonesome",
+                    "nervous",
+                    "insecure",
+                    "calm",
+                    "careful",
+                    "sneaky",
+                    "strange",
+                    "wise",
+                    "cunning",
                     "gloomy"
                 ]
             }
@@ -1260,5 +1260,5 @@
                 }
             ]
     }
-    
+
 ]

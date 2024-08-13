@@ -126,7 +126,7 @@
                 "mutual": false,
                 "values": ["respect"],
                 "amount": 10
-            }  
+            }
         ]
     },
     {
@@ -448,5 +448,5 @@
                 "reg_death": "m_c died from water-inhalation after being dragged out to sea."
             }
         ]
-    }    
+    }
 ]

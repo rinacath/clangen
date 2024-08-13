@@ -22,7 +22,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.status_constraint = {"m_c": ["healer"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -44,7 +44,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.status_constraint = {"m_c": ["healer", "warrior"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -67,7 +67,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.trait_constraint = {"m_c": ["troublesome"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -89,7 +89,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.trait_constraint = {"m_c": ["troublesome", "calm"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -112,7 +112,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.skill_constraint = {"m_c": ["HUNTER,2"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -134,7 +134,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.skill_constraint = {"m_c": ["HUNTER,2", "HUNTER,1"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -157,7 +157,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.backstory_constraint = {"m_c": ["halfclan1"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -179,7 +179,7 @@ class MainCatFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.backstory_constraint = {"m_c": ["halfclan1", "clanborn"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = group_events.get_main_cat_interactions(
@@ -202,7 +202,7 @@ class OtherFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.season = ["green-leaf"]
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = GroupEvents().get_main_cat_interactions(
@@ -222,7 +222,7 @@ class OtherFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.season = ["newleaf", "green-leaf"]
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = GroupEvents().get_main_cat_interactions(
@@ -243,7 +243,7 @@ class OtherFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.season = ["Any"]
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = GroupEvents().get_main_cat_interactions(
@@ -264,7 +264,7 @@ class OtherFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.biome = ["beach"]
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = GroupEvents().get_main_cat_interactions(
@@ -284,7 +284,7 @@ class OtherFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.biome = ["beach", "forest"]
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = GroupEvents().get_main_cat_interactions(
@@ -305,7 +305,7 @@ class OtherFiltering(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction1.biome = ["Any"]
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         filtered_interactions = GroupEvents().get_main_cat_interactions(
@@ -335,7 +335,7 @@ class Abbreviations(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.status_constraint = {"r_c1": ["healer", "warrior"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         interaction_cats = [random1, random2]
@@ -366,7 +366,7 @@ class Abbreviations(unittest.TestCase):
 
         interaction2 = GroupInteraction("2")
         interaction2.status_constraint = {"r_c1": ["medicine cat"]}
-        
+
         # when
         all_interactions = [interaction1, interaction2]
         interaction_cats = [random1, random2, random3]
@@ -392,7 +392,7 @@ class Abbreviations(unittest.TestCase):
                 "r_c2": [],
             },
         }
-        
+
         # when
         new_possibilities = GroupEvents().remove_abbreviations_missing_cats(
             abbreviations_possibilities
@@ -486,7 +486,7 @@ class OtherCatsFiltering(unittest.TestCase):
             random2, random1, True, False, 50, 50, 0, 0, 0, 0, 0
         )
 
-        # summary: 
+        # summary:
         #    - random1 and random2 are mates
         #    - random2 and main_cat are siblings
         #    - main_cat has a crush on the siblings mate (random1) + vise versa
@@ -593,7 +593,7 @@ class OtherCatsFiltering(unittest.TestCase):
             random2, random1, True, False, 50, 50, 0, 0, 0, 0, 0
         )
 
-        # summary: 
+        # summary:
         #    - random1 and random2 are mates
         #    - random2 and main_cat are siblings
         #    - main_cat has a crush on the siblings mate (random1) + vise versa

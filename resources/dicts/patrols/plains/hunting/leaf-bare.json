@@ -3815,10 +3815,10 @@
         "intro_text": "Leaf-bare is taking its toll. The patrol is cold, frustrated, and most of all, hungry. p_l notices something odd. Is that a fox in the distance? Why is it jumping into the snow like that?",
         "decline_text": "First the cold, and the snow, and now a fox? This is too much for one day, p_l decides. Back to camp, another patrol can try again later.",
         "success_outcomes": [
-            { 
+            {
         "text": "s_c watches, copying how the fox walks close to the snow, ears down, imagining what it might be listening for until- that's it! s_c leaps into the air, diving headfirst into the snow. The patrol snickers as {PRONOUN/s_c/poss} rear flails above the snow, but that snickering turns to praise when s_c pops back up with a fat mouse between {PRONOUN/s_c/poss} teeth.",
         "exp": 25,
-        "weight": 20, 
+        "weight": 20,
         "prey": ["medium"],
         "stat_skill": ["HUNTER,1","SENSE,2","CLEVER,2"],
         "relationships": [
@@ -3828,11 +3828,11 @@
                 "mutual": false,
                 "values": ["respect, trust, platonic"],
                 "amount": 5
-            } ] }, 
+            } ] },
         {
             "text": "The whole patrol stares at the sight of a fox, something cats fear, stuck upside with its whole rump flailing up and undignified. r_c can't stop {PRONOUN/r_c/self} from snorting at the sight. Then the whole patrol is laughing. For this one moment, your cats forget about the cold in the fur and hunger in their bellies to enjoy a moment with their friends.",
                 "exp": 5,
-                "weight": 20, 
+                "weight": 20,
                 "prey": ["small"],
                 "relationships": [
                     {
@@ -3843,11 +3843,11 @@
                         "amount": 5
                     }
         ]  }
-    ], 
+    ],
         "fail_outcomes": [
             {"text": "r_c snarls. {PRONOUN/r_c/subject/CAP} {VERB/r_c/are/is} too cold and too hungry to watch a stupid fox. This will be a hard hunt and if you can't focus, then go huddle with the kits at camp.",
             "exp": 0,
-            "weight": 15, 
+            "weight": 15,
             "prey": ["very small"],
             "relationships": [
                 {
@@ -3860,7 +3860,7 @@
             ]
         }
     ]
-    
+
 }
 
 ]

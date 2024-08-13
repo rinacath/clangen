@@ -91,7 +91,7 @@ def backstory_text(cat):
     if backstory is None:
         return ""
     bs_category = None
-    
+
     for category in BACKSTORIES["backstory_categories"]:
         if backstory in category:
             bs_category = category
@@ -257,7 +257,7 @@ class ProfileScreen(Screens):
                     self.update_disabled_buttons_and_text()
                 else:
                     print("invalid next cat", self.previous_cat)
-            
+
             elif event.key == pygame.K_ESCAPE:
                 self.close_current_tab()
                 self.change_screen(game.last_screen_forProfile)
@@ -852,7 +852,7 @@ class ProfileScreen(Screens):
 
         # PARENTS
         all_parents = [Cat.fetch_cat(i) for i in the_cat.get_parents()]
-        if all_parents: 
+        if all_parents:
             output += "\n"
             if len(all_parents) == 1:
                 output += "parent: " + str(all_parents[0].name)
@@ -869,7 +869,7 @@ class ProfileScreen(Screens):
             else:
                 output += "parents: " + ", ".join([str(i.name) for i in all_parents])
 
-        
+
         # MOONS
         output += "\n"
         if the_cat.dead:
@@ -894,8 +894,8 @@ class ProfileScreen(Screens):
         # MATE
         if len(the_cat.mate) > 0:
             output += "\n"
-            
-            
+
+
             mate_names = []
             # Grab the names of only the first two, since that's all we will display
             for _m in the_cat.mate[:2]:
@@ -907,20 +907,20 @@ class ProfileScreen(Screens):
                         former_indicate = "(living)"
                     else:
                         former_indicate = "(dead)"
-                    
+
                     mate_names.append(f"{str(mate_ob.name)} {former_indicate}")
                 elif mate_ob.outside != self.the_cat.outside:
                     mate_names.append(f"{str(mate_ob.name)} (away)")
                 else:
                     mate_names.append(f"{str(mate_ob.name)}")
-                    
+
             if len(the_cat.mate) == 1:
-                output += "mate: " 
+                output += "mate: "
             else:
                 output += "mates: "
-            
+
             output += ", ".join(mate_names)
-            
+
             if len(the_cat.mate) > 2:
                 output += f", and {len(the_cat.mate) - 2}"
                 if len(the_cat.mate) - 2 > 1:
@@ -1282,7 +1282,7 @@ class ProfileScreen(Screens):
             app_history = self.get_apprenticeship_text()
             if app_history:
                 life_history.append(app_history)
-                
+
             #Get mentorship text if it exists
             mentor_history = self.get_mentorship_text()
             if mentor_history:
@@ -1454,22 +1454,22 @@ class ProfileScreen(Screens):
                     influence_history += str(valid_formor_mentors[0].name) + ". "
             else:
                 influence_history += "This cat either did not have a mentor, or {PRONOUN/m_c/poss} mentor is unknown. "
-            
+
             # Second, do the facet/personality effect
             trait_influence = []
             if "trait" in mentor_influence and isinstance(
                 mentor_influence["trait"], dict
             ):
                 for _mentor in mentor_influence["trait"]:
-                    #If the strings are not set (empty list), continue. 
+                    #If the strings are not set (empty list), continue.
                     if not mentor_influence["trait"][_mentor].get("strings"):
                         continue
-                    
+
                     ment_obj = Cat.fetch_cat(_mentor)
                     #Continue of the mentor is invalid too.
                     if not isinstance(ment_obj, Cat):
                         continue
-                    
+
                     if len(mentor_influence["trait"][_mentor].get("strings")) > 1:
                         string_snippet = (
                             ", ".join(
@@ -1491,22 +1491,22 @@ class ProfileScreen(Screens):
                     )
 
             influence_history += " ".join(trait_influence)
-            
-            
+
+
             skill_influence = []
             if "skill" in mentor_influence and isinstance(
                 mentor_influence["skill"], dict
             ):
                 for _mentor in mentor_influence["skill"]:
-                    #If the strings are not set (empty list), continue. 
+                    #If the strings are not set (empty list), continue.
                     if not mentor_influence["skill"][_mentor].get("strings"):
                         continue
-                    
+
                     ment_obj = Cat.fetch_cat(_mentor)
                     #Continue of the mentor is invalid too.
                     if not isinstance(ment_obj, Cat):
                         continue
-                    
+
                     if len(mentor_influence["skill"][_mentor].get("strings")) > 1:
                         string_snippet = (
                             ", ".join(
@@ -1573,7 +1573,7 @@ class ProfileScreen(Screens):
         returns full list of previously mentored apprentices.
 
         """
-        
+
         text = ""
         # Doing this is two steps
         all_real_apprentices = [
@@ -1603,13 +1603,13 @@ class ProfileScreen(Screens):
             cat_dict = {"m_c": (str(self.the_cat.name), choice(self.the_cat.pronouns))}
 
             text = process_text(text, cat_dict)
-        
+
         return text
-        
+
 
     def get_text_for_murder_event(self, event, death):
         """ Returns the adjusted murder history text for the victim """
-        
+
         if game.switches['show_history_moons']:
             moons = True
         else:
@@ -1764,7 +1764,7 @@ class ProfileScreen(Screens):
 
             for victim in victims:
                 if not Cat.fetch_cat(victim["victim"]):
-                    continue 
+                    continue
                 name = str(Cat.fetch_cat(victim["victim"]).name)
 
                 if victim["revealed"]:
@@ -1832,9 +1832,9 @@ class ProfileScreen(Screens):
 
     def display_conditions_page(self):
         # tracks the position of the detail boxes
-        if self.condition_container: 
+        if self.condition_container:
             self.condition_container.kill()
-            
+
         self.condition_container = pygame_gui.core.UIContainer(
             scale(pygame.Rect((178, 942), (1248, 302))), MANAGER
         )
@@ -1859,7 +1859,7 @@ class ProfileScreen(Screens):
             ]
         )
         all_illness_injuries = chunks(all_illness_injuries, 4)
-        
+
         if not all_illness_injuries:
             self.conditions_page = 0
             self.right_conditions_arrow.disable()
@@ -1871,13 +1871,13 @@ class ProfileScreen(Screens):
             self.conditions_page = 0
         elif self.conditions_page > len(all_illness_injuries) - 1:
             self.conditions_page = len(all_illness_injuries) - 1
-            
+
         # Disable the arrow buttons
         if self.conditions_page == 0:
             self.left_conditions_arrow.disable()
         else:
             self.left_conditions_arrow.enable()
-        
+
         if self.conditions_page >= len(all_illness_injuries) - 1:
             self.right_conditions_arrow.disable()
         else:
@@ -1885,7 +1885,7 @@ class ProfileScreen(Screens):
 
         x_pos = 30
         for con in all_illness_injuries[self.conditions_page]:
-            
+
             # Background Box
             pygame_gui.elements.UIImage(
                 scale(pygame.Rect((x_pos, 25), (280, 276))),
@@ -1895,7 +1895,7 @@ class ProfileScreen(Screens):
             )
 
             y_adjust = 60
-            
+
             name = UITextBoxTweaked(
                 con[0],
                 scale(pygame.Rect((x_pos, 26), (272, -1))),
@@ -1908,7 +1908,7 @@ class ProfileScreen(Screens):
             y_adjust = name.get_relative_rect().height
             details_rect = scale(pygame.Rect((x_pos, 0), (276, -1)))
             details_rect.y = y_adjust
-            
+
             UITextBoxTweaked(
                 con[1],
                 details_rect,
@@ -1919,9 +1919,9 @@ class ProfileScreen(Screens):
             )
 
             x_pos += 304
-        
+
         return
-        
+
     def get_condition_details(self, name):
         """returns the relevant condition details as one string with line breaks"""
         text_list = []
@@ -1970,7 +1970,7 @@ class ProfileScreen(Screens):
                 text_list.append(f"{insert} {moons_with} moons")
             else:
                 text_list.append(f"{insert} 1 moon")
-            
+
             # infected or festering
             if "complication" in keys:
                 complication = self.the_cat.injuries[name]["complication"]
@@ -1999,7 +1999,7 @@ class ProfileScreen(Screens):
 
             if self.the_cat.illnesses[name]["infectiousness"] != 0:
                 text_list.append("infectious!")
-            
+
             # can or can't patrol
             if self.the_cat.illnesses[name]["severity"] != "minor":
                 text_list.append("Can't work with this condition")
@@ -2533,7 +2533,7 @@ class ProfileScreen(Screens):
         offset = 0
         if light_dark == "light":
             offset = 80
-                
+
         if the_cat.df:
             biome_platforms = platformsheet.subsurface(
                 pygame.Rect(0, order.index("SC/DF") * 70, 640, 70)

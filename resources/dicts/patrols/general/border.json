@@ -529,7 +529,7 @@
         "min_max_status": {},
         "weight": 20,
         "intro_text": "The patrol comes across a small dog right on the border of c_n territory.",
-        "decline_text": "p_l decides not to pursue the dog and instead cuts the patrol short to head back to camp and report it.",        
+        "decline_text": "p_l decides not to pursue the dog and instead cuts the patrol short to head back to camp and report it.",
         "chance_of_success": 40,
         "success_outcomes": [
             {
@@ -1372,15 +1372,15 @@
                 "exp": 15,
                 "weight": 10,
                 "stat_trait": [
-                    "thoughtful", 
+                    "thoughtful",
                     "careful",
                     "cunning",
-                    "responsible", 
+                    "responsible",
                     "wise"
                 ],
                 "stat_skill": [
-                    "CLEVER,1", 
-                    "INSIGHTFUL,1", 
+                    "CLEVER,1",
+                    "INSIGHTFUL,1",
                     "SENSE,1"
                 ]
             },
@@ -1389,7 +1389,7 @@
                 "exp": 15,
                 "weight": 10,
                 "stat_skill": [
-                    "KITTYPET,0", 
+                    "KITTYPET,0",
                     "LONER,0"]
             },
             {
@@ -1410,10 +1410,10 @@
                 "exp": 5,
                 "weight": 20,
                 "stat_trait": [
-                    "bloodthirsty", 
-                    "cold", 
-                    "strict", 
-                    "grumpy", 
+                    "bloodthirsty",
+                    "cold",
+                    "strict",
+                    "grumpy",
                     "fierce"
                 ]
             },
@@ -1422,9 +1422,9 @@
                 "exp": 5,
                 "weight": 20,
                 "stat_trait": [
-                    "troublesome", 
-                    "childish", 
-                    "playful", 
+                    "troublesome",
+                    "childish",
+                    "playful",
                     "shameless"
                 ]
             }
@@ -1505,7 +1505,7 @@
                 "exp": 10,
                 "weight": 20,
                 "stat_skill": [
-                    "ROGUE,0", 
+                    "ROGUE,0",
                     "LONER,0"
                 ]
             }
@@ -1558,7 +1558,7 @@
                         "mutual": true,
                         "values": ["respect"],
                         "amount": 3
-                    }	
+                    }
                 ]
             },
             {
@@ -1576,7 +1576,7 @@
                         "mutual": true,
                         "values": ["respect", "trust"],
                         "amount": 3
-                    }	
+                    }
                 ]
             },
             {
@@ -1592,7 +1592,7 @@
                         "mutual": false,
                         "values": ["dislike", "trust", "comfort"],
                         "amount": 5
-                    }	
+                    }
                 ]
             },
             {
@@ -1608,7 +1608,7 @@
                         "mutual": true,
                         "values": ["platonic"],
                         "amount": 5
-                    }	
+                    }
                 ]
             }
         ],
@@ -1633,7 +1633,7 @@
                         "mutual": false,
                         "values": ["dislike"],
                         "amount": 3
-                    }	
+                    }
                 ]
             },
             {
@@ -1662,7 +1662,7 @@
                         "mutual": false,
                         "values": ["platonic", "respect"],
                         "amount": -5
-                    }		
+                    }
                 ]
             },
             {
@@ -1678,7 +1678,7 @@
                         "mutual": true,
                         "values": ["dislike"],
                         "amount": 5
-                    }	
+                    }
                 ]
             }
         ]
@@ -1724,7 +1724,7 @@
                         "mutual": true,
                         "values": ["dislike"],
                         "amount": -10
-                    }	
+                    }
                 ],
                 "other_clan_rep": -1
             },
@@ -1739,7 +1739,7 @@
                         "mutual": true,
                         "values": ["respect"],
                         "amount": 3
-                    }	
+                    }
                 ]
             },
             {
@@ -1757,7 +1757,7 @@
                         "mutual": true,
                         "values": ["respect", "trust"],
                         "amount": 3
-                    }	
+                    }
                 ]
             },
             {
@@ -1773,7 +1773,7 @@
                         "mutual": false,
                         "values": ["dislike", "trust", "comfort"],
                         "amount": 5
-                    }	
+                    }
                 ]
             },
             {
@@ -1789,7 +1789,7 @@
                         "mutual": true,
                         "values": ["platonic"],
                         "amount": 5
-                    }	
+                    }
                 ]
             }
         ],
@@ -1828,7 +1828,7 @@
                         "mutual": false,
                         "values": ["respect"],
                         "amount": -5
-                    }	
+                    }
                 ]
             },
             {
@@ -1864,7 +1864,7 @@
                         "mutual": false,
                         "values": ["platonic", "respect"],
                         "amount": -5
-                    }		
+                    }
                 ]
             },
             {
@@ -1880,7 +1880,7 @@
                         "mutual": true,
                         "values": ["dislike"],
                         "amount": 5
-                    }	
+                    }
                 ]
             },
             {

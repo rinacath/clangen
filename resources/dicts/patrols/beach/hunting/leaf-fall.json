@@ -239,7 +239,7 @@
                         "scars": ["SNAKE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c was scarred by a rattlesnake.",
                     "reg_death": "m_c succumbed to a rattlesnake bite.",
                     "lead_death": "succumbed to a rattlesnake bite"
@@ -639,7 +639,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red vixen.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -665,7 +665,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from fight with a red vixen.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -1278,7 +1278,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a gray vixen.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -1305,7 +1305,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a gray vixen.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"

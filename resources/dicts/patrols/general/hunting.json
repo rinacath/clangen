@@ -1639,7 +1639,7 @@
                   "injuries": ["torn ear", "scrapes"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -1709,7 +1709,7 @@
                   "injuries": ["torn ear", "scrapes"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -1779,7 +1779,7 @@
                   "injuries": ["torn ear", "scrapes"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -1849,7 +1849,7 @@
                   "injuries": ["torn ear", "scrapes"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -1919,7 +1919,7 @@
                   "injuries": ["torn ear", "scrapes"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -3085,7 +3085,7 @@
                   "injuries": ["torn ear"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -3201,7 +3201,7 @@
                   "injuries": ["torn ear"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -3324,7 +3324,7 @@
                   "injuries": ["torn ear"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -3438,7 +3438,7 @@
                   "injuries": ["torn ear"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -3552,7 +3552,7 @@
                   "injuries": ["torn ear"],
                   "scars": ["RIGHTEAR"],
                   "no_results": false
-             
+
                 }
               ],
               "history_text": {
@@ -3592,11 +3592,11 @@
             "exp": 20,
             "weight": 20,
             "stat_trait": [
-                "bold", 
-                "confident", 
-                "daring", 
-                "adventurous", 
-                "shameless", 
+                "bold",
+                "confident",
+                "daring",
+                "adventurous",
+                "shameless",
                 "playful"
             ],
             "art": ["kittylion_OUTCOME"]

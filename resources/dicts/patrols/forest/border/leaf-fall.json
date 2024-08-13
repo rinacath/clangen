@@ -24,9 +24,9 @@
             "exp": 10,
             "weight": 20,
             "stat_trait": [
-                "childish", 
-                "adventurous", 
-                "bold", 
+                "childish",
+                "adventurous",
+                "bold",
                 "shameless"
             ],
             "can_have_stat": ["r_c"]

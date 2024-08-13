@@ -52,7 +52,7 @@ class PatrolScreen(Screens):
     def handle_event(self, event):
         if game.switches["window_open"]:
             return
-        
+
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
             if self.patrol_stage == "choose_cats":
                 self.handle_choose_cats_events(event)
@@ -201,17 +201,17 @@ class PatrolScreen(Screens):
             self.mate = self.selected_cat.mate[self.selected_mate_index]
             self.update_selected_cat()
             self.update_button()
-            
+
     def handle_patrol_events_event(self, event):
-        
+
         inp = None
-        if event.ui_element == self.elements["proceed"]:            
+        if event.ui_element == self.elements["proceed"]:
             inp = "proceed"
         elif event.ui_element == self.elements["not_proceed"]:
             inp = "notproceed"
         elif event.ui_element == self.elements["antagonize"]:
             inp = "antagonize"
-        
+
         if inp:
             self.proceed_patrol_thread = self.loading_screen_start_work(self.run_patrol_proceed, "proceed", (inp,))
 
@@ -489,7 +489,7 @@ class PatrolScreen(Screens):
             self.display_text = self.patrol_obj.setup_patrol(self.current_patrol, self.patrol_type)
         except RuntimeError:
             self.display_text = None
-        
+
     def open_patrol_event_screen(self):
         """Open the patrol event screen. This sets up the patrol starting"""
         self.clear_page()
@@ -497,7 +497,7 @@ class PatrolScreen(Screens):
         self.patrol_stage = 'patrol_events'
 
         if self.display_text is None:
-            # No patrol events were found. 
+            # No patrol events were found.
             self.change_screen("camp screen")
             return
 
@@ -520,7 +520,7 @@ class PatrolScreen(Screens):
                                                                        pygame.image.load(
                                                                            "resources/images/patrol_sprite_frame.png").convert_alpha(),
                                                                        (640, 640)
-                                                                   ), manager=MANAGER) 
+                                                                   ), manager=MANAGER)
 
 
         self.elements['intro_image'] = pygame_gui.elements.UIImage(
@@ -528,7 +528,7 @@ class PatrolScreen(Screens):
                         pygame.transform.scale(
                             self.patrol_obj.get_patrol_art(), (600, 600))
                     )
-        
+
 
         # Prepare Intro Text
         # adjusting text for solo patrols
@@ -548,10 +548,10 @@ class PatrolScreen(Screens):
         for x in self.patrol_obj.patrol_cats:
             if x.personality.trait not in traits:
                 traits.append(x.personality.trait)
-            
+
             if x.skills.primary and x.skills.primary.get_short_skill() not in skills:
                 skills.append(x.skills.primary.get_short_skill())
-                
+
             if x.skills.secondary and x.skills.secondary.get_short_skill() not in skills:
                 skills.append(x.skills.secondary.get_short_skill())
 
@@ -595,7 +595,7 @@ class PatrolScreen(Screens):
 
     def run_patrol_proceed(self, user_input):
         """Proceeds the patrol - to be run in the seperate thread. """
-        
+
         if user_input in ["nopro", "notproceed"]:
             self.display_text, self.results_text, self.outcome_art = self.patrol_obj.proceed_patrol("decline")
         elif user_input in ["antag", "antagonize"]:
@@ -615,7 +615,7 @@ class PatrolScreen(Screens):
                                                      object_id="#return_to_clan", manager=MANAGER)
         self.elements['patrol_again'] = UIImageButton(scale(pygame.Rect((1120, 274), (324, 60))), "",
                                                       object_id="#patrol_again", manager=MANAGER)
-                
+
         # Update patrol art, if needed.
         if self.outcome_art is not None and self.elements.get('intro_image') is not None:
             self.elements['intro_image'].set_image(self.outcome_art)
@@ -730,10 +730,10 @@ class PatrolScreen(Screens):
             for x in self.current_patrol:
                 if x.skills.primary and x.skills.primary.get_short_skill() not in patrol_skills:
                     patrol_skills.append(x.skills.primary.get_short_skill())
-                
+
                 if x.skills.secondary and x.skills.secondary.get_short_skill() not in patrol_skills:
                     patrol_skills.append(x.skills.secondary.get_short_skill())
-                
+
                 if x.personality.trait not in patrol_traits:
                     patrol_traits.append(x.personality.trait)
 
@@ -958,7 +958,7 @@ class PatrolScreen(Screens):
         self.hide_menu_buttons()
 
     def on_use(self):
-        
+
         self.loading_screen_on_use(self.start_patrol_thread, self.open_patrol_event_screen, (700, 500))
         self.loading_screen_on_use(self.proceed_patrol_thread, self.open_patrol_complete_screen, (350, 500))
 

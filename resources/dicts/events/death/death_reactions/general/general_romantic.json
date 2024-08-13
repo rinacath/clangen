@@ -174,7 +174,7 @@
     "body": [
       "When m_c's body is returned to camp, r_c can't help but break down in caterwauls. {PRONOUN/r_c/subject/CAP} {VERB/r_c/press/presses} {PRONOUN/r_c/poss} muzzle into m_c's icy pelt, shivering with grief.",
       "Despite feeling like {PRONOUN/r_c/poss} heart has been torn in two, r_c gently places m_c's favorite nest decorations next to {PRONOUN/m_c/poss} still body, so that it looks like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not dead, but simply in a deep and peaceful sleep."
-      
+
     ],
     "no_body": [
       "Even with no body, r_c is determined to never fall in love with another cat again. m_c was {PRONOUN/r_c/poss} one true love, and maybe, just maybe, {PRONOUN/m_c/subject} will return someday."
@@ -183,7 +183,7 @@
   },
   "loyal": {
     "body": [
-    
+
 
     ],
     "no_body": [

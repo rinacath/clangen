@@ -347,8 +347,8 @@
                         "scars": ["BRIDGE"]
                     }
                 ],
-                "history_text": { 
-                    "scar": "m_c got injured as an apprentice, exploring alone." 
+                "history_text": {
+                    "scar": "m_c got injured as an apprentice, exploring alone."
                 },
                 "relationships": [
                     {
@@ -428,10 +428,10 @@
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
-                    "bold", 
-                    "childish", 
-                    "confident", 
-                    "daring", 
+                    "bold",
+                    "childish",
+                    "confident",
+                    "daring",
                     "playful",
                     "flamboyant"
                 ]
@@ -504,10 +504,10 @@
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
-                    "bold", 
-                    "childish", 
-                    "confident", 
-                    "daring", 
+                    "bold",
+                    "childish",
+                    "confident",
+                    "daring",
                     "playful",
                     "flamboyant"
                 ]
@@ -580,10 +580,10 @@
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
-                    "bold", 
-                    "childish", 
-                    "confident", 
-                    "daring", 
+                    "bold",
+                    "childish",
+                    "confident",
+                    "daring",
                     "playful",
                     "flamboyant"
                 ]
@@ -631,8 +631,8 @@
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
-                    "daring", 
-                    "bold", 
+                    "daring",
+                    "bold",
                     "ambitious",
                     "arrogant",
                     "competitive",
@@ -652,7 +652,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c gained a scar from a fox.",
                     "reg_death": "m_c died from a fox bite.",
                     "lead_death": "died from a fox bite"
@@ -701,8 +701,8 @@
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
-                    "daring", 
-                    "bold", 
+                    "daring",
+                    "bold",
                     "ambitious",
                     "arrogant",
                     "competitive",
@@ -779,8 +779,8 @@
                 "exp": 0,
                 "weight": 20,
                 "stat_trait": [
-                    "daring", 
-                    "bold", 
+                    "daring",
+                    "bold",
                     "ambitious",
                     "arrogant",
                     "competitive",
@@ -1516,9 +1516,9 @@
                 "stat_trait": [
                     "arrogant",
                     "adventurous",
-                    "childish", 
+                    "childish",
                     "confident",
-                    "oblivious", 
+                    "oblivious",
                     "playful",
                     "troublesome"
                 ]
@@ -1586,9 +1586,9 @@
                 "stat_trait": [
                     "arrogant",
                     "adventurous",
-                    "childish", 
+                    "childish",
                     "confident",
-                    "oblivious", 
+                    "oblivious",
                     "playful",
                     "troublesome"
                 ]
@@ -2007,10 +2007,10 @@
                 "exp": 15,
                 "weight": 20,
                 "stat_trait": [
-                    "charismatic", 
+                    "charismatic",
                     "confident",
                     "flamboyant",
-                    "oblivious", 
+                    "oblivious",
                     "playful",
                     "shameless",
                     "strange"
@@ -2119,11 +2119,11 @@
                 "exp": 15,
                 "weight": 20,
                 "stat_trait": [
-                    "bloodthirsty", 
-                    "cold", 
+                    "bloodthirsty",
+                    "cold",
                     "fierce",
                     "grumpy",
-                    "righteous", 
+                    "righteous",
                     "strict",
                     "vengeful"
                 ],
@@ -2161,8 +2161,8 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
-                    "childish", 
-                    "faithful", 
+                    "childish",
+                    "faithful",
                     "loving",
                     "sincere",
                     "strange"
@@ -2212,11 +2212,11 @@
                 "exp": 15,
                 "weight": 20,
                 "stat_trait": [
-                    "bloodthirsty", 
-                    "cold", 
+                    "bloodthirsty",
+                    "cold",
                     "fierce",
                     "grumpy",
-                    "righteous", 
+                    "righteous",
                     "strict",
                     "vengeful"
                 ],
@@ -2236,8 +2236,8 @@
                 "weight": 20,
                 "stat_trait": [
                     "compassionate",
-                    "childish", 
-                    "faithful", 
+                    "childish",
+                    "faithful",
                     "loving",
                     "sincere",
                     "strange"
@@ -2575,7 +2575,7 @@
                         "scars": ["beak_scars"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from an eagle's beak.",
                     "reg_death": "m_c died from an eagle bite.",
                     "lead_death": "died from an eagle bite"
@@ -2873,7 +2873,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -2909,7 +2909,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -3046,7 +3046,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -3082,7 +3082,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -3448,7 +3448,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a gray fox.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -3773,7 +3773,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a gray fox.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -3809,7 +3809,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a gray fox.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -3979,7 +3979,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -4027,7 +4027,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -4213,7 +4213,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -4260,7 +4260,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -4411,7 +4411,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -4451,7 +4451,7 @@
                         "scars": ["NECKBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a red fox.",
                     "reg_death": "m_c died from a red fox bite.",
                     "lead_death": "died from a red fox bite"
@@ -4654,7 +4654,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a gray fox.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -4701,7 +4701,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a fight with a gray fox.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -5075,7 +5075,7 @@
                 "text": "r_c finds a gray fox holding a mouse that would make a nice addition to c_n's fresh-kill pile and springs out to attack it. But the fox is just as keen to keep it as r_c is to win it, and {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} injured in the resulting fight.",
                 "exp": 0,
                 "weight": 10,
-                
+
                 "injury": [
                     {
                         "cats": ["r_c"],
@@ -5083,7 +5083,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a gray fox.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -5123,7 +5123,7 @@
                         "scars": ["LEGBITE"]
                     }
                 ],
-                "history_text": { 
+                "history_text": {
                     "scar": "m_c carries a scar from a solo fight with a gray fox.",
                     "reg_death": "m_c died from a gray fox bite.",
                     "lead_death": "died from a gray fox bite"
@@ -5406,6 +5406,6 @@
                 }
             ]
     }
-    
-    
+
+
 ]

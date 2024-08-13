@@ -87,7 +87,7 @@ class Scar_Events():
 
     @staticmethod
     def handle_scars(cat, injury_name):
-        """ 
+        """
         This function handles the scars
         """
 

@@ -31,7 +31,7 @@ def test():
                         print(e)
                         failed = True
                         continue
-                
+
                 try:
                     _ = ujson.loads(contents)
                 except ujson.JSONDecodeError as e:
@@ -39,7 +39,7 @@ def test():
                     print(e)
                     failed = True
                     pass
-    
+
     if failed:
         sys.exit(1)
     sys.exit(0)
